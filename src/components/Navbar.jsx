@@ -50,7 +50,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-3">
-            <img  alt="Elite Academy Logo" class="h-10 w-10 rounded-md object-cover" src="https://images.unsplash.com/photo-1685115560482-7ec4fb23414c" />
+            <img  alt="Elite Academy Logo" class="h-10 w-10 rounded-md object-cover" src="https://i.imgur.com/DrdmR3h.jpeg" />
             <span className="text-2xl font-bold gradient-text">Elite Academy</span>
           </Link>
 
