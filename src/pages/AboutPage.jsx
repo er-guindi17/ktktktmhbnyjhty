@@ -10,7 +10,9 @@ const AboutPage = () => {
     animate: { opacity: 1, y: 0, transition: { duration: 0.6, delay } },
   });
 
-  const staffMembers = [];
+  const staffMembers = [
+    
+  ];
 
   return (
     <div className="py-12 md:py-20 bg-gradient-to-b from-background to-secondary/10">
