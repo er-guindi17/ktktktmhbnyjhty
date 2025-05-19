@@ -65,7 +65,24 @@ const AboutPage = () => {
               </motion.div>
             ))}
           </div>
-        
+        </motion.div>
+
+        <motion.div {...fadeIn(0.6)}>
+          <h2 className="text-3xl font-bold text-center mb-10 gradient-text">El Equipo Detrás de la Arena</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {staffMembers.map((member, index) => (
+              <motion.div key={member.name} {...fadeIn(0.7 + index * 0.15)}>
+                <Card className="glass-card overflow-hidden text-center hover:shadow-primary/30 hover:shadow-lg transition-shadow duration-300">
+                  <img src={member.image} alt={member.alt} className="w-full h-56 object-cover object-center" />
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
+                    <p className="text-primary">{member.role}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </div>
   );
