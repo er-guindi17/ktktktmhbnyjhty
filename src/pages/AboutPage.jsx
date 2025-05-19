@@ -30,7 +30,7 @@ const AboutPage = () => {
           <Card className="glass-card overflow-hidden shadow-xl primary-glow">
             <div className="md:flex">
               <div className="md:w-1/2">
-                <img className="h-64 w-full object-cover md:h-full" alt="Escena de combate intensa en Elite Academy" src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGdhbWluZyUyMGFjdGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" />
+                <img className="h-64 w-full object-cover md:h-full" alt="Escena de combate intensa en Elite Academy" src="https://media.discordapp.net/attachments/1363990403099136132/1373630534709805167/bannerdiscord.png?ex=682c6e20&is=682b1ca0&hm=78b9471e61c51bb60ef1a1c0c7d505d117494a260f8a50eff35d43157688d8db&=&format=webp&quality=lossless" />
               </div>
               <div className="md:w-1/2 p-8 md:p-12">
                 <h2 className="text-3xl font-semibold text-foreground mb-4">Nuestra Arena</h2>
@@ -65,24 +65,7 @@ const AboutPage = () => {
               </motion.div>
             ))}
           </div>
-        </motion.div>
-
-        <motion.div {...fadeIn(0.6)}>
-          <h2 className="text-3xl font-bold text-center mb-10 gradient-text">El Equipo Detrás de la Arena</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {staffMembers.map((member, index) => (
-              <motion.div key={member.name} {...fadeIn(0.7 + index * 0.15)}>
-                <Card className="glass-card overflow-hidden text-center hover:shadow-primary/30 hover:shadow-lg transition-shadow duration-300">
-                  <img src={member.image} alt={member.alt} className="w-full h-56 object-cover object-center" />
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
-                    <p className="text-primary">{member.role}</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+        
       </div>
     </div>
   );
