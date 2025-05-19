@@ -44,7 +44,11 @@ const MainLayout = () => {
               animate={{ scale: 1, opacity: 1 }}
               transition={{ type: "spring", stiffness: 200, damping: 15, delay: 0.1 }}
             >
-              <img  alt="Elite Academy Logo de Carga" class="h-24 w-24 rounded-xl object-cover mb-4" src="https://images.unsplash.com/photo-1685115560482-7ec4fb23414c" />
+              <img 
+                alt="Elite Academy Logo de Carga" 
+                className="h-24 w-24 rounded-xl object-cover mb-4" 
+                src="https://i.imgur.com/DrdmR3h.jpeg" 
+              />
             </motion.div>
             <motion.h1 
               className="text-4xl md:text-6xl font-bold gradient-text text-shadow"
