@@ -10,11 +10,7 @@ const AboutPage = () => {
     animate: { opacity: 1, y: 0, transition: { duration: 0.6, delay } },
   });
 
-  const staffMembers = [
-    { name: "Commander 'Havoc' Rex", role: "Fundador y Admin Principal", image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBvcnRyYWl0JTIwbWFuJTIwY29uZmlkZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=200&q=60", alt: "Commander Rex" },
-    { name: "Agent 'Wraith' Valerius", role: "Jefe de Desarrollo y Eventos", image: "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBvcnRyYWl0JTIwbWFuJTIwc2VyaW91c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=200&q=60", alt: "Agent Valerius" },
-    { name: "Operator 'Nyx' Sharma", role: "Moderadora Jefe y Soporte Comunitario", image: "https://images.unsplash.com/photo-1488426862026-39b994028de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG9ydHJhaXQlMjBmZW1hbGUlMjBzdHJvbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=200&q=60", alt: "Operator Nyx" },
-  ];
+  const staffMembers = [];
 
   return (
     <div className="py-12 md:py-20 bg-gradient-to-b from-background to-secondary/10">
