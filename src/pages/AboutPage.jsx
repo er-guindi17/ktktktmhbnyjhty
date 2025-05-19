@@ -1,4 +1,4 @@
-
+ite A
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card.jsx';
@@ -33,9 +33,9 @@ const AboutPage = () => {
                 <img className="h-64 w-full object-cover md:h-full" alt="Escena de combate intensa en Elite Academy" src="https://media.discordapp.net/attachments/1363990403099136132/1373630534709805167/bannerdiscord.png?ex=682c6e20&is=682b1ca0&hm=78b9471e61c51bb60ef1a1c0c7d505d117494a260f8a50eff35d43157688d8db&=&format=webp&quality=lossless" />
               </div>
               <div className="md:w-1/2 p-8 md:p-12">
-                <h2 className="text-3xl font-semibold text-foreground mb-4">Nuestra Arena</h2>
+                <h2 className="text-3xl font-semibold text-foreground mb-4">Elite Academy</h2>
                 <p className="text-muted-foreground mb-4">
-                  Elite Academy nació de la pasión por el combate PvP justo y emocionante. Nuestra misión es proporcionar una plataforma estable, competitiva y atractiva donde los jugadores puedan demostrar su habilidad, estrategia y trabajo en equipo.
+                  Elite Academy nació de la pasión por el combate PvP justo y emocionante. Nuestra misión es proporcionar una plataforma estable, competitiva y atractiva donde los jugadores puedan demostrar sus habilidadesç.
                 </p>
                 <p className="text-muted-foreground">
                   Creemos en el juego limpio, una comunidad fuerte y la evolución constante de la experiencia de juego.
