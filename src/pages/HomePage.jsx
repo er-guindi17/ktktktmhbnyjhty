@@ -27,26 +27,26 @@ const FeatureCard = ({ icon, title, description, delay }) => (
 const testimonials = [
   {
     id: 1,
-    quote: "La adrenalina en Elite Academy es incomparable. ¡Cada combate es una nueva leyenda!",
-    name: "Razor 'El Implacable' Vortex",
-    role: "Top Fragger - Temporada 3",
-    imageUrl: "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdhbWVyJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=100&q=60",
+    quote: "Si quieres aparecer aqui abre ticket en nuestro discord y simplemente dinoslo y ya esta aqui estaras",
+    name: "Slot disponible",
+    role: "Disponible",
+    imageUrl: "https://i.imgur.com/DrdmR3h.jpeg",
     alt: "Avatar de Razor Vortex"
   },
   {
     id: 2,
-    quote: "La comunidad aquí es feroz pero justa. He mejorado mis habilidades PvP enormemente.",
-    name: "Shadow 'La Estratega' Blade",
-    role: "Maestra de Duelos",
-    imageUrl: "https://images.unsplash.com/photo-1609010693955-364c870a6402?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z2FtZXIlMjBwb3J0cmFpdCUyMGZlbWFsZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=100&q=60",
+    quote: "Si quieres aparecer aqui abre ticket en nuestro discord y simplemente dinoslo y ya esta aqui estaras",
+    name: "Slot disponible",
+    role: "Disponible",
+    imageUrl: "https://i.imgur.com/DrdmR3h.jpeg",
     alt: "Avatar de Shadow Blade"
   },
   {
     id: 3,
-    quote: "Desde que me uní, cada día es un nuevo desafío. Elite Academy es el pináculo del PvP.",
-    name: "Titan 'El Conquistador' Fury",
-    role: "Campeón de la Arena",
-    imageUrl: "https://images.unsplash.com/photo-1614655054030-80855c499587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGdhbWVyJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=100&q=60",
+    quote: "Si quieres aparecer aqui abre ticket en nuestro discord y simplemente dinoslo y ya esta aqui estaras",
+    name: "Slot disponible",
+    role: "Disponible",
+    imageUrl: "https://i.imgur.com/DrdmR3h.jpeg",
     alt: "Avatar de Titan Fury"
   }
 ];
