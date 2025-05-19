@@ -1,0 +1,95 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 3%; /* Negro profundo */
+    --foreground: 0 0% 98%; /* Blanco casi puro */
+    
+    --card: 0 0% 5%; /* Negro ligeramente más claro para tarjetas */
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 98%;
+    
+    /* Verde Fosforito: HSL(90, 100%, 50%) - Ajustado para Tailwind */
+    --primary: 90 100% 50%; 
+    --primary-foreground: 0 0% 5%; /* Texto oscuro para contraste con verde fosforito */
+    
+    --secondary: 0 0% 12%; /* Gris oscuro para elementos secundarios */
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 0 0% 15%; /* Gris más claro para texto silenciado */
+    --muted-foreground: 0 0% 65%;
+    
+    --accent: 90 100% 50%; /* Verde fosforito como acento */
+    --accent-foreground: 0 0% 5%;
+    
+    --destructive: 0 84% 60%; /* Rojo para destructivo, mantener contraste */
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 90 100% 30%; /* Borde verde oscuro */
+    --input: 0 0% 10%; /* Input oscuro */
+    --ring: 90 100% 55%; /* Anillo de enfoque verde más brillante */
+    
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-orbitron; /* Cambiado a font-orbitron */
+    /* Fondo con patrón sutil usando el nuevo color primario */
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2332CD32' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+.hero-gradient {
+  /* Gradiente con negro y verde oscuro sutil */
+  background: linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(0, 50, 0, 0.7) 100%);
+}
+
+.glass-card {
+  background: rgba(10, 25, 10, 0.6); /* Tinte verdoso sutil para el efecto glass */
+  backdrop-filter: blur(10px);
+  border: 1px solid hsla(var(--primary) / 0.2); /* Borde verde con opacidad */
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.primary-glow { 
+  box-shadow: 0 0 15px hsla(var(--primary) / 0.6);
+}
+
+.nav-blur {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.85); 
+}
+
+.clip-path-slant {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.clip-path-slant-reverse {
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, hsl(var(--primary)), hsl(90 100% 65%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; 
+}
+
+.font-orbitron { /* Nueva clase para la fuente Orbitron */
+  font-family: 'Orbitron', sans-serif;
+}
