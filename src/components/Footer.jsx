@@ -48,7 +48,6 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
         <div className="mt-12 border-t border-border/50 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
             &copy; {currentYear} Elite Academy. Todos los derechos reservados.
