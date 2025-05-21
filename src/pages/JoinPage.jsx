@@ -22,22 +22,6 @@ const connectionLinks = [
     icon: <Gamepad2 className="h-10 w-10 text-primary" />,
     cta: 'Conectar Ahora',
   },
-  {
-    id: 'forum',
-    title: 'Visita Nuestros Foros',
-    description: 'Discusiones, guías, y más en nuestra comunidad online.',
-    url: 'https://yourforum.com', // Reemplaza con tu enlace al foro
-    icon: <Users className="h-10 w-10 text-primary" />,
-    cta: 'Ir a los Foros',
-  },
-  {
-    id: 'twitch',
-    title: 'Síguenos en Twitch',
-    description: 'No te pierdas nuestros streams en vivo, eventos y torneos.',
-    url: 'https://twitch.tv/yourchannel', // Reemplaza con tu enlace de Twitch
-    icon: <Twitch className="h-10 w-10 text-primary" />,
-    cta: 'Ver en Twitch',
-  },
 ];
 
 const JoinPage = () => {
