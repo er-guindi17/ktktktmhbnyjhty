@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-center md:items-start">
             <Link to="/" className="flex items-center space-x-3 mb-4">
-              <img  alt="Elite Academy Logo Footer" class="h-8 w-8 rounded-md object-cover" src="https://i.imgur.com/DrdmR3h.jpeg" />
+              <img  alt="Elite Academy Logo Footer" class="h-8 w-8 rounded-md object-cover" src="https://images.unsplash.com/photo-1685115560482-7ec4fb23414c" />
               <span className="text-xl font-bold gradient-text">Elite Academy</span>
             </Link>
             <p className="text-sm text-muted-foreground text-center md:text-left">
@@ -40,7 +40,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          
+          <div>
+            <h3 className="text-lg font-semibold text-foreground mb-4 text-center md:text-left">Conéctate</h3>
+            
             <a href="https://discord.gg/yourdiscord" target="_blank" rel="noopener noreferrer" className="block mt-4 text-sm text-primary hover:text-primary/80 text-center md:text-left">
                 Únete a nuestro Discord
             </a>
