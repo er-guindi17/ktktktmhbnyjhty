@@ -11,10 +11,26 @@ const AboutPage = () => {
   });
 
   const staffMembers = [
-    { name: "Commander 'Havoc' Rex", role: "Fundador y Admin Principal", image: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBvcnRyYWl0JTIwbWFuJTIwY29uZmlkZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=200&q=60", alt: "Commander Rex" },
-    { name: "Agent 'Wraith' Valerius", role: "Jefe de Desarrollo y Eventos", image: "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBvcnRyYWl0JTIwbWFuJTIwc2VyaW91c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=200&q=60", alt: "Agent Valerius" },
-    { name: "Operator 'Nyx' Sharma", role: "Moderadora Jefe y Soporte Comunitario", image: "https://images.unsplash.com/photo-1488426862026-39b994028de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG9ydHJhaXQlMjBmZW1hbGUlMjBzdHJvbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=200&q=60", alt: "Operator Nyx" },
+    {
+      name: "👑El Parcero👑",
+      role: "Fundador Principal",
+      image: "https://cdn.discordapp.com/attachments/1370102083843395606/1374838338657325176/image.png?ex=682f817b&is=682e2ffb&hm=45e6cccaf13b3dcdce8a376389fd0baadd5756d90649670f04555d5edb410c29&",
+      alt: "parcero"
+    },
+    {
+      name: "! 𝕮𝖚𝖇𝖆𝖆",
+      role: "Fundador",
+      image: "https://cdn.discordapp.com/attachments/1370102083843395606/1374838448112009236/image.png?ex=682f8195&is=682e3015&hm=3a55d71ddd55ba95cea9768083795daec3247b98892107cb16c7ce8509ee0dfe&",
+      alt: "cuba"
+    },
+    {
+      name: "♕er_guindi♕",
+      role: "Co-fundador y programador de bots y web",
+      image: "https://cdn.discordapp.com/attachments/1370102083843395606/1374838544111112334/NO_BORRAR_FOTO_PERFIL.gif?ex=682f81ac&is=682e302c&hm=38147d75ce5dae6f3e9b01211a2a6e87134673956ee1a3a999448b3ba3671d21&",
+      alt: "guindi"
+    },
   ];
+
 
   return (
     <div className="py-12 md:py-20 bg-gradient-to-b from-background to-secondary/10">
