@@ -42,7 +42,6 @@ const Footer = () => {
 
           <div>
             <h3 className="text-lg font-semibold text-foreground mb-4 text-center md:text-left">Conéctate</h3>
-            
             <a href="https://discord.gg/yourdiscord" target="_blank" rel="noopener noreferrer" className="block mt-4 text-sm text-primary hover:text-primary/80 text-center md:text-left">
                 Únete a nuestro Discord
             </a>
@@ -53,7 +52,7 @@ const Footer = () => {
             &copy; {currentYear} Elite Academy. Todos los derechos reservados.
           </p>
           <p className="text-xs text-muted-foreground/70 mt-1">
-            Diseñado para la comunidad <span className="text-primary">&lambda;</span> por jugadores.
+            Diseñado para la comunidad <span className="text-primary">&lambda;</span> por er.guindi.
           </p>
         </div>
       </div>
