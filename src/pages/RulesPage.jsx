@@ -35,7 +35,7 @@ const rulesData = [
       "Tolerancia CERO al uso de hacks, cheats, scripts o cualquier software de terceros que otorgue ventajas injustas.",
       "Cualquier intento de modificar los archivos del juego para obtener ventaja será sancionado severamente.",
       "Reportar a jugadores sospechosos de trampas al staff con pruebas (vídeos, capturas).",
-      "No acusar públicamente de trampas; usar los canales de reporte designados."
+      "No acusar públicamente de trampas, usar los canales de reporte designados."
     ]
   },
   {
