@@ -1,4 +1,4 @@
-
+re otras muchas cosas mas
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion.jsx";
@@ -21,10 +21,10 @@ const rulesData = [
     title: "2. Reglas de Combate (PvP)",
     icon: <Swords className="h-5 w-5 text-primary mr-2" />,
     content: [
-      "Juego limpio es primordial. No se permite el 'teaming' o alianzas injustas en modos solo.",
+      "Juego limpio es primordial. No se permite el 'DM' entre otras muchas cosas mas.",
       "Prohibido el 'stream sniping' o cualquier forma de obtener ventaja externa.",
-      "No abusar de mecánicas del juego ('exploits') para obtener ventajas en combate.",
-      "Respetar las zonas seguras designadas o eventos de no-PvP."
+      "No abusar de mecánicas del juego 'exploits' para obtener ventajas en combate.",
+      "Dar chance es obligatorio en cualquier situación, exceptuando zonas rojas, robos, drops y tormentas"
     ]
   },
   {
@@ -54,9 +54,9 @@ const rulesData = [
     title: "5. Exploits y Errores del Juego",
     icon: <Flame className="h-5 w-5 text-primary mr-2" />,
     content: [
-      "Reportar cualquier bug o exploit encontrado al staff de manera privada.",
+      "Reportar cualquier bug o exploit encontrado al staff a través de un ticket.",
       "Abusar de bugs conocidos para beneficio personal o de equipo está estrictamente prohibido.",
-      "No construir en zonas no designadas o que puedan causar problemas de rendimiento (bug-building).",
+      "No usar F8 quit al morir para evitar ser cacheado.",
       "La duplicación de ítems o cualquier forma de abuso económico mediante exploits resultará en ban permanente."
     ]
   },
