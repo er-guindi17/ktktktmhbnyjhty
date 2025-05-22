@@ -22,11 +22,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-center md:items-start">
             <Link to="/" className="flex items-center space-x-3 mb-4">
-              <img  alt="Elite Academy Logo Footer" class="h-8 w-8 rounded-md object-cover" src="https://images.unsplash.com/photo-1685115560482-7ec4fb23414c" />
+              <img  alt="Elite Academy Logo Footer" class="h-8 w-8 rounded-md object-cover" src="https://cdn.discordapp.com/attachments/1363990403099136132/1373630534449762405/Sin_titulo-1.png?ex=683062a0&is=682f1120&hm=ff3cf51ee4ced598ab4ed49a46becd5d07e83833229cc1b02d46ecbb86a4f8ba&" />
               <span className="text-xl font-bold gradient-text">Elite Academy</span>
             </Link>
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              Forjando leyendas en la comunidad. Únete a la élite.
+              Forjando leyendas en la comunidad. Únete a Elite Academy.
             </p>
           </div>
 
