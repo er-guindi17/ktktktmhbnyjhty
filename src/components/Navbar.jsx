@@ -69,7 +69,7 @@ const Navbar = () => {
                 </NavLink>
               </motion.div>
             ))}
-            <a href="https://discord.gg/yourdiscord" target="_blank" rel="noopener noreferrer">
+            <a href="https://discord.gg/4an54zAXa7" target="_blank" rel="noopener noreferrer">
               <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground primary-glow">
                 Discord
               </Button>
