@@ -108,7 +108,7 @@ const Navbar = () => {
                   {item.name}
                 </NavLink>
               ))}
-              <a href="https://discord.gg/yourdiscord" target="_blank" rel="noopener noreferrer" className="w-3/4">
+              <a href="https://discord.gg/4an54zAXa7" target="_blank" rel="noopener noreferrer" className="w-3/4">
                 <Button variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground primary-glow">
                   Discord
                 </Button>
