@@ -3,16 +3,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card.jsx';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog.jsx';
-import { Maximize, Swords, Shield, Trophy, Users } from 'lucide-react';
+import { Maximize, Swords, Shield, Trophy, Users, Crown } from 'lucide-react';
 
 const galleryImages = [
   { 
     id: 1, 
-    alt: "Jugador ganando un torneo en Elite Academy", 
-    description: "¡Victoria épica! Campeón del torneo semanal.",
+    alt: "Nueva lobby de Elite Academy", 
+    description: "Nueva lobby de Elite Academy",
     thumbnailUrl: "https://images.unsplash.com/photo-1585331505473-7586f9cb0854?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHZwJTIwZ2FtaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
     fullUrl: "https://images.unsplash.com/photo-1585331505473-7586f9cb0854?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHZwJTIwZ2FtaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=1200&q=80",
-    icon: <Trophy className="h-5 w-5 text-primary" />
+    icon: <Crown className="h-5 w-5 text-primary" />
   },
   { 
     id: 2, 
