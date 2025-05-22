@@ -10,7 +10,7 @@ const connectionLinks = [
     id: 'discord',
     title: 'Únete a Discord',
     description: 'Chatea con la comunidad, encuentra equipos y mantente al día.',
-    url: 'https://discord.gg/yourdiscord', // Reemplaza con tu enlace de Discord
+    url: 'https://discord.gg/4an54zAXa7', // Reemplaza con tu enlace de Discord
     icon: <MessageSquare className="h-10 w-10 text-primary" />,
     cta: 'Ir a Discord',
   },
