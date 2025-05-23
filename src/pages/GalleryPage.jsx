@@ -36,6 +36,14 @@ const galleryImages = [
     thumbnailUrl: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdhbWluZyUyMGFyZW5hfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
     fullUrl: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdhbWluZyUyMGFyZW5hfGVufDB8fDB8fHww&auto=format&fit=crop&w=1200&q=80",
     icon: <Shield className="h-5 w-5 text-primary" />
+  },
+  { 
+    id: 5, 
+    alt: "Intenso combate 1v1 en Elite Academy", 
+    description: "Duelo reñido hasta el último segundo.",
+    thumbnailUrl: "https://images.unsplash.com/photo-1612287230202-956de7e79696?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHZwJTIwZ2FtaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+    fullUrl: "https://images.unsplash.com/photo-1612287230202-956de7e79696?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHZwJTIwZ2FtaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=1200&q=80",
+    icon: <Swords className="h-5 w-5 text-primary" />
   }
 ];
 
@@ -56,46 +64,53 @@ const GalleryPage = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {galleryImages.map((image, index) => (
-            <motion.div
-              key={image.id}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Card className="overflow-hidden glass-card group cursor-pointer hover:shadow-primary/30 hover:shadow-xl transition-all duration-300 primary-glow">
-                    <div className="relative aspect-video">
-                      <img
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" 
-                        alt={image.alt}
-                        src={image.thumbnailUrl} />
-                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <Maximize className="h-10 w-10 text-white" />
+          {galleryImages.map((image, index) => {
+            const isLastSingle = galleryImages.length % 4 === 1 && index === galleryImages.length - 1;
+
+            return (
+              <motion.div
+                key={image.id}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className={isLastSingle ? "col-span-full flex justify-center" : ""}
+              >
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Card className="overflow-hidden glass-card group cursor-pointer hover:shadow-primary/30 hover:shadow-xl transition-all duration-300 primary-glow w-full max-w-sm">
+                      <div className="relative aspect-video">
+                        <img
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                          alt={image.alt}
+                          src={image.thumbnailUrl}
+                        />
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                          <Maximize className="h-10 w-10 text-white" />
+                        </div>
                       </div>
-                    </div>
-                    {/* 
-                    <CardContent className="p-4">
-                      <div className="flex items-center mb-1">
-                        {image.icon}
-                        <p className="text-sm text-muted-foreground truncate ml-2">{image.description}</p>
-                      </div>
-                    </CardContent>
-                    */}
-                  </Card>
-                </DialogTrigger>
-                <DialogContent className="max-w-4xl p-0 border-0 bg-transparent">
-                  <img
-                    className="w-full h-auto object-contain rounded-lg shadow-2xl" 
-                    alt={image.alt}
-                    src={image.fullUrl} />
-                </DialogContent>
-              </Dialog>
-            </motion.div>
-          ))}
+                      {/*
+                      <CardContent className="p-4">
+                        <div className="flex items-center mb-1">
+                          {image.icon}
+                          <p className="text-sm text-muted-foreground truncate ml-2">{image.description}</p>
+                        </div>
+                      </CardContent>
+                      */}
+                    </Card>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl p-0 border-0 bg-transparent">
+                    <img
+                      className="w-full h-auto object-contain rounded-lg shadow-2xl"
+                      alt={image.alt}
+                      src={image.fullUrl}
+                    />
+                  </DialogContent>
+                </Dialog>
+              </motion.div>
+            );
+          })}
         </div>
-        
+
         <motion.div 
           className="mt-16 text-center"
           {...fadeIn(galleryImages.length * 0.1 + 0.2)}
