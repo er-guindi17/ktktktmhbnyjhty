@@ -7,42 +7,42 @@ import { Maximize, Swords, Shield, Trophy, Users, Crown } from 'lucide-react';
 const galleryImages = [
   { 
     id: 1, 
-    alt: "Nueva lobby de Elite Academy", 
-    description: "Nueva lobby de Elite Academy",
-    thumbnailUrl: "https://cdn.discordapp.com/attachments/1363990403099136132/1375223198475616276/image.png?ex=6830e7e8&is=682f9668&hm=0b00d21647dbff1ddc7e6202ad5461063952f6f83c6ec79c4328c16696bdad55&",
-    fullUrl: "https://cdn.discordapp.com/attachments/1363990403099136132/1375223198475616276/image.png?ex=6830e7e8&is=682f9668&hm=0b00d21647dbff1ddc7e6202ad5461063952f6f83c6ec79c4328c16696bdad55&",
+    alt: "", 
+    description: "",
+    thumbnailUrl: "https://cdn.discordapp.com/attachments/1363990403099136132/1374024378865553511/EA_logo.png?ex=683128ac&is=682fd72c&hm=7a493486d28ebde307028f4c1932db49b3bc610337c33a9de555a903d77f2af6&",
+    fullUrl: "https://cdn.discordapp.com/attachments/1363990403099136132/1374024378865553511/EA_logo.png?ex=683128ac&is=682fd72c&hm=7a493486d28ebde307028f4c1932db49b3bc610337c33a9de555a903d77f2af6&",
     icon: <Crown className="h-5 w-5 text-primary" />
   },
   { 
     id: 2, 
-    alt: "Intenso combate 1v1 en Elite Academy", 
-    description: "Duelo reñido hasta el último segundo.",
-    thumbnailUrl: "https://images.unsplash.com/photo-1612287230202-956de7e79696?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHZwJTIwZ2FtaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
-    fullUrl: "https://images.unsplash.com/photo-1612287230202-956de7e79696?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHZwJTIwZ2FtaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=1200&q=80",
+    alt: "", 
+    description: "",
+    thumbnailUrl: "https://cdn.discordapp.com/attachments/1363990403099136132/1375223198475616276/image.png?ex=683190a8&is=68303f28&hm=4c801083870368404a737cde57e7e504f41ca94a48523b58bd3c312d588a01b1&",
+    fullUrl: "https://cdn.discordapp.com/attachments/1363990403099136132/1375223198475616276/image.png?ex=683190a8&is=68303f28&hm=4c801083870368404a737cde57e7e504f41ca94a48523b58bd3c312d588a01b1&",
     icon: <Swords className="h-5 w-5 text-primary" />
   },
   { 
     id: 3, 
-    alt: "Equipo celebrando victoria en Elite Academy", 
-    description: "¡Trabajo en equipo que lleva a la gloria!",
-    thumbnailUrl: "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZXNwb3J0c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
-    fullUrl: "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZXNwb3J0c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1200&q=80",
+    alt: "", 
+    description: "",
+    thumbnailUrl: "https://cdn.discordapp.com/attachments/1363990403099136132/1375222845453500519/20250522232314_1.jpg?ex=68319054&is=68303ed4&hm=a9b2afdfa7cf34784d276d55b42e79aacae15c68a21cd4e689eb2cc99e5aa158&",
+    fullUrl: "https://cdn.discordapp.com/attachments/1363990403099136132/1375222845453500519/20250522232314_1.jpg?ex=68319054&is=68303ed4&hm=a9b2afdfa7cf34784d276d55b42e79aacae15c68a21cd4e689eb2cc99e5aa158&",
     icon: <Users className="h-5 w-5 text-primary" />
   },
   { 
     id: 4, 
-    alt: "Vista de una arena de combate en Elite Academy", 
-    description: "La arena espera a sus próximos campeones.",
-    thumbnailUrl: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdhbWluZyUyMGFyZW5hfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
-    fullUrl: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdhbWluZyUyMGFyZW5hfGVufDB8fDB8fHww&auto=format&fit=crop&w=1200&q=80",
+    alt: "", 
+    description: "",
+    thumbnailUrl: "https://cdn.discordapp.com/attachments/1363990403099136132/1375225099635920916/image.png?ex=6831926e&is=683040ee&hm=2670a1158cbb01bbf66039626658ef4b8e1dd091974a7805bb14d0a0d39c2c4f&",
+    fullUrl: "https://cdn.discordapp.com/attachments/1363990403099136132/1375225099635920916/image.png?ex=6831926e&is=683040ee&hm=2670a1158cbb01bbf66039626658ef4b8e1dd091974a7805bb14d0a0d39c2c4f&",
     icon: <Shield className="h-5 w-5 text-primary" />
   },
   { 
     id: 5, 
-    alt: "Intenso combate 1v1 en Elite Academy", 
-    description: "Duelo reñido hasta el último segundo.",
-    thumbnailUrl: "https://images.unsplash.com/photo-1612287230202-956de7e79696?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHZwJTIwZ2FtaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
-    fullUrl: "https://images.unsplash.com/photo-1612287230202-956de7e79696?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHZwJTIwZ2FtaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=1200&q=80",
+    alt: "", 
+    description: "",
+    thumbnailUrl: "https://cdn.discordapp.com/attachments/1363990403099136132/1375227970100137984/image.png?ex=6831951a&is=6830439a&hm=73a4d4a596a82a72991046acb8f5f62c344d3536c196e757da22528f91c174c5&",
+    fullUrl: "https://cdn.discordapp.com/attachments/1363990403099136132/1375227970100137984/image.png?ex=6831951a&is=6830439a&hm=73a4d4a596a82a72991046acb8f5f62c344d3536c196e757da22528f91c174c5&",
     icon: <Swords className="h-5 w-5 text-primary" />
   }
 ];
