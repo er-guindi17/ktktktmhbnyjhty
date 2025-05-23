@@ -16,7 +16,7 @@ const connectionLinks = [
   {
     id: 'server',
     title: 'Conéctate al Servidor',
-    description: 'Entra directamente a la acción. IP: play.eliteacademy.gg',
+    description: 'Entra directamente a la acción. IP: próximamente',
     url: 'fivem://connect/play.eliteacademy.gg',
     icon: <Gamepad2 className="h-10 w-10 text-primary" />,
     cta: 'Conectar Ahora',
