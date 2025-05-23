@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Twitter, Linkedin } from 'lucide-react'; // Discord icon can be custom or from another library if needed
+import { Shield, Github, Twitter, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { FaDiscord, FaTiktok } from 'react-icons/fa'; // Agregamos estos íconos
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,42 +17,57 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-background/80 border-t border-border/50 mt-auto py-12 font-orbitron">
+    <footer className="bg-background/80 border-t border-border/50 mt-auto py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-center md:items-start">
-            <Link to="/" className="flex items-center space-x-3 mb-4">
-              <img  alt="Elite Academy Logo Footer" class="h-8 w-8 rounded-md object-cover" src="https://cdn.discordapp.com/attachments/1363990403099136132/1373630534449762405/Sin_titulo-1.png?ex=683062a0&is=682f1120&hm=ff3cf51ee4ced598ab4ed49a46becd5d07e83833229cc1b02d46ecbb86a4f8ba&" />
-              <span className="text-xl font-bold gradient-text">Elite Academy</span>
+            <Link to="/" className="flex items-center space-x-2 mb-4">
+              <Shield className="h-8 w-8 text-primary" />
+              <span className="text-xl font-bold gradient-text">Sevilla RP</span>
             </Link>
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              Forjando leyendas en la comunidad. Únete a Elite Academy.
+              Vive la experiencia de roleplay más inmersiva en la ciudad de Sevilla.
             </p>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4 text-center md:text-left">Explorar</h3>
+            <h3 className="text-lg font-semibold text-foreground mb-4 text-center md:text-left">Enlaces Rápidos</h3>
             <ul className="space-y-2 text-center md:text-left">
               <li><Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">Sobre Nosotros</Link></li>
-              <li><Link to="/rules" className="text-sm text-muted-foreground hover:text-primary transition-colors">Reglamento</Link></li>
-              <li><Link to="/join" className="text-sm text-muted-foreground hover:text-primary transition-colors">Conexiones</Link></li>
+              <li><Link to="/rules" className="text-sm text-muted-foreground hover:text-primary transition-colors">Normativas</Link></li>
+              <li><Link to="/join" className="text-sm text-muted-foreground hover:text-primary transition-colors">Cómo Unirse</Link></li>
               <li><Link to="/gallery" className="text-sm text-muted-foreground hover:text-primary transition-colors">Galería</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4 text-center md:text-left">Conéctate</h3>
-            <a href="https://discord.gg/4an54zAXa7" target="_blank" rel="noopener noreferrer" className="block mt-4 text-sm text-primary hover:text-primary/80 text-center md:text-left">
-                Únete a nuestro Discord
-            </a>
+            <h3 className="text-lg font-semibold text-foreground mb-4 text-center md:text-left">Síguenos</h3>
+            <div className="flex justify-center md:justify-start space-x-4">
+              <motion.a href="#" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
+                <Twitter className="h-6 w-6 text-muted-foreground" />
+              </motion.a>
+              <motion.a href="#" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
+                <Instagram className="h-6 w-6 text-muted-foreground" />
+              </motion.a>
+              <motion.a href="#" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
+                <Github className="h-6 w-6 text-muted-foreground" />
+              </motion.a>
+              <motion.a href="https://discord.com/invite/tuservidor" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
+                <FaDiscord className="h-6 w-6 text-muted-foreground" />
+              </motion.a>
+              <motion.a href="https://www.tiktok.com/@tucuenta" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
+                <FaTiktok className="h-6 w-6 text-muted-foreground" />
+              </motion.a>
+            </div>
           </div>
         </div>
+
         <div className="mt-12 border-t border-border/50 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} Elite Academy. Todos los derechos reservados.
+            &copy; {currentYear} Sevilla RP. Todos los derechos reservados.
           </p>
           <p className="text-xs text-muted-foreground/70 mt-1">
-            Diseñado para la comunidad <span className="text-primary">&lambda;</span> por er.guindi.
+            Diseñado con <span className="text-red-500">&hearts;</span> por la comunidad.
           </p>
         </div>
       </div>
