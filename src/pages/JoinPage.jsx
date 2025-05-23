@@ -60,11 +60,11 @@ const JoinPage = () => {
                   </CardHeader>
                   <CardContent className="flex-grow flex flex-col text-center relative">
                     <p className="text-muted-foreground mb-6 flex-grow">{link.description}</p>
-                    
-                    {/* Overlay de "Próximamente" */}
+
+                    {/* Overlay de "Próximamente" en verde fosforescente */}
                     {isDisabled && (
-                      <div className="absolute inset-x-0 bottom-0 mb-1 z-10 flex justify-center">
-                        <span className="bg-yellow-500 text-white text-lg font-bold px-4 py-1 rounded-full shadow-lg animate-pulse">
+                      <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
+                        <span className="bg-lime-400 text-black text-lg font-bold px-6 py-1 rounded-full shadow-md animate-pulse">
                           Próximamente
                         </span>
                       </div>
