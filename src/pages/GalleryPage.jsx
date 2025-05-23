@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card.jsx';
@@ -40,7 +39,6 @@ const galleryImages = [
   }
 ];
 
-
 const GalleryPage = () => {
   const fadeIn = (delay = 0) => ({
     initial: { opacity: 0, y: 20 },
@@ -77,19 +75,21 @@ const GalleryPage = () => {
                         <Maximize className="h-10 w-10 text-white" />
                       </div>
                     </div>
+                    {/* 
                     <CardContent className="p-4">
                       <div className="flex items-center mb-1">
                         {image.icon}
                         <p className="text-sm text-muted-foreground truncate ml-2">{image.description}</p>
                       </div>
                     </CardContent>
+                    */}
                   </Card>
                 </DialogTrigger>
                 <DialogContent className="max-w-4xl p-0 border-0 bg-transparent">
-                   <img
-                      className="w-full h-auto object-contain rounded-lg shadow-2xl" 
-                      alt={image.alt}
-                      src={image.fullUrl} />
+                  <img
+                    className="w-full h-auto object-contain rounded-lg shadow-2xl" 
+                    alt={image.alt}
+                    src={image.fullUrl} />
                 </DialogContent>
               </Dialog>
             </motion.div>
