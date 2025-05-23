@@ -113,7 +113,7 @@ const HomePage = () => {
             />
             <FeatureCard 
               icon={<Shield />} 
-              title="Arena de Campeones" 
+              title="Arena" 
               description="Demuestra tu habilidad en nuestras arenas competitivas y eventos especiales."
               delay={0.5}
             />
