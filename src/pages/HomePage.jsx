@@ -119,7 +119,7 @@ const HomePage = () => {
             />
             <FeatureCard 
               icon={<Crown />} 
-              title="Ranking y Recompensas" 
+              title="Ranking" 
               description="Asciende en la clasificación, gana prestigio y obtén recompensas exclusivas."
               delay={0.7}
             />
