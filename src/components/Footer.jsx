@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Github, Twitter, Instagram } from 'lucide-react';
+import { Shield } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { FaDiscord, FaTiktok } from 'react-icons/fa'; // Agregamos estos íconos
+import { FaDiscord, FaTiktok } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -43,15 +43,6 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-foreground mb-4 text-center md:text-left">Síguenos</h3>
             <div className="flex justify-center md:justify-start space-x-4">
-              <motion.a href="#" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
-                <Twitter className="h-6 w-6 text-muted-foreground" />
-              </motion.a>
-              <motion.a href="#" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
-                <Instagram className="h-6 w-6 text-muted-foreground" />
-              </motion.a>
-              <motion.a href="#" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
-                <Github className="h-6 w-6 text-muted-foreground" />
-              </motion.a>
               <motion.a href="https://discord.com/invite/4an54zAXa7" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
                 <FaDiscord className="h-6 w-6 text-muted-foreground" />
               </motion.a>
