@@ -52,10 +52,10 @@ const Footer = () => {
               <motion.a href="#" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
                 <Github className="h-6 w-6 text-muted-foreground" />
               </motion.a>
-              <motion.a href="https://discord.com/invite/tuservidor" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
+              <motion.a href="https://discord.com/invite/4an54zAXa7" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
                 <FaDiscord className="h-6 w-6 text-muted-foreground" />
               </motion.a>
-              <motion.a href="https://www.tiktok.com/@tucuenta" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
+              <motion.a href="https://www.tiktok.com/@elite_academy_2025" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
                 <FaTiktok className="h-6 w-6 text-muted-foreground" />
               </motion.a>
             </div>
