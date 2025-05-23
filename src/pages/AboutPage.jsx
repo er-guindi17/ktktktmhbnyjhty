@@ -45,7 +45,7 @@ const AboutPage = () => {
           <Card className="glass-card overflow-hidden shadow-xl primary-glow">
             <div className="md:flex">
               <div className="md:w-1/2">
-                <img className="h-64 w-full object-cover md:h-full" alt="Escena de combate intensa en Elite Academy" src="https://media.discordapp.net/attachments/1363990403099136132/1373630534709805167/bannerdiscord.png?ex=682c6e20&is=682b1ca0&hm=78b9471e61c51bb60ef1a1c0c7d505d117494a260f8a50eff35d43157688d8db&=&format=webp&quality=lossless" />
+                <img className="h-64 w-full object-cover md:h-full" alt="Escena de combate intensa en Elite Academy" src="https://i.imgur.com/Ky3Mltz.jpeg" />
               </div>
               <div className="md:w-1/2 p-8 md:p-12">
                 <h2 className="text-3xl font-semibold text-foreground mb-4">Elite Academy</h2>
