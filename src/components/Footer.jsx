@@ -26,7 +26,7 @@ const Footer = () => {
               <span className="text-xl font-bold gradient-text">Elite Academy</span>
             </Link>
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              Vive la experiencia de roleplay más inmersiva en la ciudad de Sevilla.
+              Forjando leyendas en la comunidad. Únete a Elite Academy.
             </p>
           </div>
 
