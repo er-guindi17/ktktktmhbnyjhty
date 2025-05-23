@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button.jsx';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card.jsx';
-import { ExternalLink, MessageSquare, Gamepad2 } from 'lucide-react'; // Using MessageSquare for Discord
+import { ExternalLink, MessageSquare, Gamepad2 } from 'lucide-react';
 
 const connectionLinks = [
   {
@@ -16,7 +16,7 @@ const connectionLinks = [
   {
     id: 'server',
     title: 'Conéctate al Servidor',
-    description: 'Entra directamente a la acción. IP: eliteacademy',
+    description: 'Entra directamente a la acción. IP: play.eliteacademy.gg',
     url: 'fivem://connect/play.eliteacademy.gg',
     icon: <Gamepad2 className="h-10 w-10 text-primary" />,
     cta: 'Conectar Ahora',
@@ -50,7 +50,7 @@ const JoinPage = () => {
                 <Card
                   className={`glass-card h-full flex flex-col transition-all duration-300 primary-glow ${
                     isDisabled
-                      ? 'opacity-50 pointer-events-none cursor-not-allowed'
+                      ? 'opacity-70 relative cursor-not-allowed'
                       : 'hover:shadow-primary/30 hover:shadow-xl'
                   }`}
                 >
@@ -58,11 +58,18 @@ const JoinPage = () => {
                     {link.icon}
                     <CardTitle className="text-2xl gradient-text mt-2">{link.title}</CardTitle>
                   </CardHeader>
-                  <CardContent className="flex-grow flex flex-col text-center">
-                    <p className="text-muted-foreground mb-4 flex-grow">{link.description}</p>
+                  <CardContent className="flex-grow flex flex-col text-center relative">
+                    <p className="text-muted-foreground mb-6 flex-grow">{link.description}</p>
+                    
+                    {/* Overlay de "Próximamente" */}
                     {isDisabled && (
-                      <p className="text-sm text-muted-foreground italic mb-4">Próximamente</p>
+                      <div className="absolute inset-x-0 bottom-0 mb-1 z-10 flex justify-center">
+                        <span className="bg-yellow-500 text-white text-lg font-bold px-4 py-1 rounded-full shadow-lg animate-pulse">
+                          Próximamente
+                        </span>
+                      </div>
                     )}
+
                     <a
                       href={isDisabled ? undefined : link.url}
                       target="_blank"
