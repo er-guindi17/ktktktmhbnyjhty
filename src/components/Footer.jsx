@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Shield } from 'lucide-react';
+import { Shield, Github, Twitter, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { FaDiscord, FaTiktok } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -43,11 +42,14 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-foreground mb-4 text-center md:text-left">Síguenos</h3>
             <div className="flex justify-center md:justify-start space-x-4">
-              <motion.a href="https://discord.com/invite/4an54zAXa7" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
-                <FaDiscord className="h-6 w-6 text-muted-foreground" />
+              <motion.a href="#" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
+                <Twitter className="h-6 w-6 text-muted-foreground" />
               </motion.a>
-              <motion.a href="https://www.tiktok.com/@elite_academy_2025" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
-                <FaTiktok className="h-6 w-6 text-muted-foreground" />
+              <motion.a href="#" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
+                <Instagram className="h-6 w-6 text-muted-foreground" />
+              </motion.a>
+              <motion.a href="#" target="_blank" rel="noopener noreferrer" variants={iconVariants} whileHover="hover">
+                <Github className="h-6 w-6 text-muted-foreground" />
               </motion.a>
             </div>
           </div>
@@ -55,10 +57,10 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-border/50 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} Sevilla RP. Todos los derechos reservados.
+            &copy; {currentYear} Elite Academy. Todos los derechos reservados.
           </p>
           <p className="text-xs text-muted-foreground/70 mt-1">
-            Diseñado con <span className="text-red-500">&hearts;</span> por la comunidad.
+            Diseñado para la comunidad <span className="text-red-500">&hearts;</span> por er.guindi.
           </p>
         </div>
       </div>
