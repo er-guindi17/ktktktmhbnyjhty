@@ -1,7 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card.jsx';
+import { Card, CardContent } from '@/components/ui/card.jsx';
 import { Users, Zap, Target, Shield, Server, Map } from 'lucide-react';
+
+// Importa imágenes locales desde src/images
+import parceroImg from '../images/parcero.png';
+import guindiImg from '../images/erguindi.png';
+import meroImg from '../images/mero.png';
 
 const AboutPage = () => {
   const fadeIn = (delay = 0) => ({
@@ -13,23 +18,22 @@ const AboutPage = () => {
     {
       name: "👑El Parcero👑",
       role: "Fundador Principal",
-      image: "https://cdn.discordapp.com/attachments/1370102083843395606/1374838338657325176/image.png?ex=682f817b&is=682e2ffb&hm=45e6cccaf13b3dcdce8a376389fd0baadd5756d90649670f04555d5edb410c29&",
-      alt: "parcero"
+      image: parceroImg,
+      alt: "parcero",
     },
     {
       name: "♕er_guindi♕",
       role: "Fundador y programador de bots y web",
-      image: "https://cdn.discordapp.com/attachments/1370102083843395606/1374838448112009236/image.png?ex=682f8195&is=682e3015&hm=3a55d71ddd55ba95cea9768083795daec3247b98892107cb16c7ce8509ee0dfe&",
-      alt: "guindi"
+      image: guindiImg,
+      alt: "guindi",
     },
     {
       name: "♰ 𝑬𝑳 𝑴𝑬𝑹𝑶 𝟔𝟔",
       role: "Fundador",
-      image: "https://cdn.discordapp.com/attachments/1370102083843395606/1374838544111112334/NO_BORRAR_FOTO_PERFIL.gif?ex=682f81ac&is=682e302c&hm=38147d75ce5dae6f3e9b01211a2a6e87134673956ee1a3a999448b3ba3671d21&",
-      alt: "mero"
+      image: meroImg,
+      alt: "mero",
     },
   ];
-
 
   return (
     <div className="py-12 md:py-20 bg-gradient-to-b from-background to-secondary/10">
@@ -50,7 +54,7 @@ const AboutPage = () => {
               <div className="md:w-1/2 p-8 md:p-12">
                 <h2 className="text-3xl font-semibold text-foreground mb-4">Elite Academy</h2>
                 <p className="text-muted-foreground mb-4">
-                  Elite Academy nació de la pasión por el combate PvP justo y emocionante. Nuestra misión es proporcionar una plataforma estable, competitiva y atractiva donde los jugadores puedan demostrar sus habilidadesç.
+                  Elite Academy nació de la pasión por el combate PvP justo y emocionante. Nuestra misión es proporcionar una plataforma estable, competitiva y atractiva donde los jugadores puedan demostrar sus habilidades.
                 </p>
                 <p className="text-muted-foreground">
                   Creemos en el juego limpio, una comunidad fuerte y la evolución constante de la experiencia de juego.
