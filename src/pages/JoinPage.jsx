@@ -9,15 +9,15 @@ const connectionLinks = [
     id: 'discord',
     title: 'Únete a Discord',
     description: 'Chatea con la comunidad, encuentra equipos y mantente al día.',
-    url: 'https://discord.gg/4an54zAXa7',
+    url: 'https://discord.gg/elite-academy',
     icon: <MessageSquare className="h-10 w-10 text-primary" />,
     cta: 'Ir a Discord',
   },
   {
     id: 'server',
     title: 'Conéctate al Servidor',
-    description: 'Entra directamente a la acción. IP: próximamente',
-    url: 'fivem://connect/play.eliteacademy.gg',
+    description: 'Entra directamente a la acción. IP: play.eliteacademy.gg',
+    url: 'https://cfx.re/join/l99755',
     icon: <Gamepad2 className="h-10 w-10 text-primary" />,
     cta: 'Conectar Ahora',
   },
@@ -42,52 +42,30 @@ const JoinPage = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {connectionLinks.map((link, index) => {
-            const isDisabled = link.id === 'server';
-
-            return (
-              <motion.div key={link.id} {...fadeIn(0.2 + index * 0.15)}>
-                <Card
-                  className={`glass-card h-full flex flex-col transition-all duration-300 primary-glow ${
-                    isDisabled
-                      ? 'opacity-70 relative cursor-not-allowed'
-                      : 'hover:shadow-primary/30 hover:shadow-xl'
-                  }`}
-                >
-                  <CardHeader className="items-center text-center">
-                    {link.icon}
-                    <CardTitle className="text-2xl gradient-text mt-2">{link.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="flex-grow flex flex-col text-center relative">
-                    <p className="text-muted-foreground mb-6 flex-grow">{link.description}</p>
-
-                    {/* Overlay de "Próximamente" en verde fosforescente */}
-                    {isDisabled && (
-                      <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-10">
-                        <span className="bg-lime-400 text-black text-lg font-bold px-6 py-1 rounded-full shadow-md animate-pulse">
-                          Próximamente
-                        </span>
-                      </div>
-                    )}
-
-                    <a
-                      href={isDisabled ? undefined : link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={e => isDisabled && e.preventDefault()}
-                    >
-                      <Button
-                        className="w-full bg-primary hover:bg-primary/90 text-primary-foreground primary-glow"
-                        disabled={isDisabled}
-                      >
-                        {link.cta} <ExternalLink className="ml-2 h-4 w-4" />
-                      </Button>
-                    </a>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            );
-          })}
+          {connectionLinks.map((link, index) => (
+            <motion.div key={link.id} {...fadeIn(0.2 + index * 0.15)}>
+              <Card
+                className="glass-card h-full flex flex-col transition-all duration-300 primary-glow hover:shadow-primary/30 hover:shadow-xl"
+              >
+                <CardHeader className="items-center text-center">
+                  {link.icon}
+                  <CardTitle className="text-2xl gradient-text mt-2">{link.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow flex flex-col text-center relative">
+                  <p className="text-muted-foreground mb-6 flex-grow">{link.description}</p>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground primary-glow">
+                      {link.cta} <ExternalLink className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
+            </motion.div>
+          ))}
         </div>
       </div>
     </div>
