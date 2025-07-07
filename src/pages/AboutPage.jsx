@@ -17,16 +17,16 @@ const AboutPage = () => {
       alt: "parcero"
     },
     {
-      name: "! 𝕮𝖚𝖇𝖆𝖆",
-      role: "Fundador",
+      name: "♕er_guindi♕",
+      role: "Fundador y programador de bots y web",
       image: "https://cdn.discordapp.com/attachments/1370102083843395606/1374838448112009236/image.png?ex=682f8195&is=682e3015&hm=3a55d71ddd55ba95cea9768083795daec3247b98892107cb16c7ce8509ee0dfe&",
-      alt: "cuba"
+      alt: "guindi"
     },
     {
-      name: "♕er_guindi♕",
-      role: "Co-fundador y programador de bots y web",
+      name: "♰ 𝑬𝑳 𝑴𝑬𝑹𝑶 𝟔𝟔",
+      role: "Fundador",
       image: "https://cdn.discordapp.com/attachments/1370102083843395606/1374838544111112334/NO_BORRAR_FOTO_PERFIL.gif?ex=682f81ac&is=682e302c&hm=38147d75ce5dae6f3e9b01211a2a6e87134673956ee1a3a999448b3ba3671d21&",
-      alt: "guindi"
+      alt: "mero"
     },
   ];
 
